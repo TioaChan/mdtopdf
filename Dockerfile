@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
-        apt install wget texlive-luatex texlive-lang-cjk lmodern texlive-xetex \
+        apt install wget texlive-luatex texlive-lang-cjk lmodern texlive-xetex fonts-noto fonts-noto-cjk fonts-noto-cjk-extra \
         texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra latexmk git latexdiff -y && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
